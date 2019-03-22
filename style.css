@@ -1,0 +1,54 @@
+:root {
+    --taskBox-size: 350px;
+    --userBox-margin-side: 10px;
+}
+
+#capgeminiLogo {
+    width: 400px;
+    height: 170px;
+}
+
+h1 {
+    width: 900px;
+    margin: 5px auto;
+    text-align: center;
+    background-color: grey;
+}
+
+.taskBox {
+    width: var(--taskBox-size);
+    height: var(--taskBox-size);
+    margin: 10px auto;
+    overflow: auto;
+    font-size: 20px;
+    background-color: grey;
+}
+
+.taskBoxLabel {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.userBox {
+    display: inline-block;
+    margin: 10px var(--userBox-margin-side)
+}
+
+#userBoxesId {
+    width: calc(var(--taskBox-size)*3 + var(--userBox-margin-side)*6 + 10px);
+    padding: 50px;
+    margin: 10px auto;
+    background-color: green;
+
+}
+
+ul {
+    min-height: 92%;
+    width: 300px;
+    margin: 0px auto;
+    display: block;
+    background-color: lightblue;
+    list-style-type: none;
+}

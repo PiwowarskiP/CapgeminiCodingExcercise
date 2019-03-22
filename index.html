@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CapGemini Coding Exercise by P.Piwowarski</title>
+
+        <meta charset="UTF-8" />
+        <meta name="author" content="P. Piwowarski" />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="style.css" type="text/css" rel="stylesheet" />
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-draggable@1.0.9/lib/vue-draggable.js"></script>
+
+    </head>
+    <body>
+        <noscript>
+            <strong>This site won't work without JS enabled, sorry :)</strong>
+        </noscript>
+        
+        <header>
+            <image id="capgeminiLogo" src="https://www.weschoolbangalore.in/wp-content/uploads/2017/09/capgemini-logo.jpg" alt="Capgemini - logo" />
+            <h1>Capgemini Coding Exercise by P.Piwowarski</h1>
+            <hr />
+        </header>
+        
+        <main id="app">
+            <div v-drag-and-drop:options="options" id="tasks" class="taskBox">
+                <label class="taskBoxLabel">Tasks</label>
+                <ul>
+                   <li v-for="task in tasks">{{ task }}</li>
+                </ul>
+            </div>
+            
+            <div id="userBoxesId">
+                <div v-drag-and-drop:options="options" id="user2" class="taskBox userBox">
+                    <label class="taskBoxLabel">User 2</label>
+                    <ul></ul>
+                </div>
+                <div v-drag-and-drop:options="options" id="user1" class="taskBox userBox">
+                    <label class="taskBoxLabel">User 1</label>
+                    <ul></ul>
+                </div>
+                <div v-drag-and-drop:options="options" id="user3" class="taskBox userBox">
+                    <label class="taskBoxLabel">User 3</label>
+                    <ul></ul>
+                </div>
+            </div>
+
+            <button @click="clearSession">Clear sessionStorage</button>
+
+        </main>
+    </body>
+    <script src="tasksDragAndDropScript.js"></script>
+</html>
