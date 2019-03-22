@@ -12,9 +12,9 @@ Download all three files to your computer and open index.html with any browser. 
 Future functionalities:
 - saving the current status to Session Storage - thanks to this, the given tasks will not disappear after reloading the browser.
 
-- Professional user interface
+- professional user interface
 
-- Mobile version
+- mobile version
 
 - a form that allows you to add your own tasks
 
